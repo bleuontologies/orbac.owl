@@ -1,1 +1,675 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:orbac-owl="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl"/>
+    
 
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#accessTypeActivity -->
+
+    <ObjectProperty rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#accessTypeActivity">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#AccessType"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Activity"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#accessTypeContext -->
+
+    <ObjectProperty rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#accessTypeContext">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#AccessType"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Context"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#accessTypeOrganisation -->
+
+    <ObjectProperty rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#accessTypeOrganisation">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#AccessType"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Organisation"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#accessTypeRole -->
+
+    <ObjectProperty rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#accessTypeRole">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#AccessType"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Role"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#accessTypeView -->
+
+    <ObjectProperty rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#accessTypeView">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#AccessType"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#View"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#considersAction -->
+
+    <ObjectProperty rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#considersAction">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Consider"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Action"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#considersActivity -->
+
+    <ObjectProperty rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#considersActivity">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Consider"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Activity"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#considersOrganisation -->
+
+    <ObjectProperty rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#considersOrganisation">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Consider"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Organisation"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#definesAction -->
+
+    <ObjectProperty rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#definesAction">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Define"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Action"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#definesContext -->
+
+    <ObjectProperty rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#definesContext">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Define"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Context"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#definesObject -->
+
+    <ObjectProperty rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#definesObject">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Define"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Object"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#definesOrganisation -->
+
+    <ObjectProperty rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#definesOrganisation">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Define"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Organisation"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#definesSubject -->
+
+    <ObjectProperty rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#definesSubject">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Define"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Subject"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#employesEmployee -->
+
+    <ObjectProperty rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#employesEmployee">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Employ"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Subject"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#employesEmployer -->
+
+    <ObjectProperty rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#employesEmployer">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Employ"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Organisation"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#employesRole -->
+
+    <ObjectProperty rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#employesRole">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Employ"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Role"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#hasParent -->
+
+    <ObjectProperty rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#hasParent">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Role"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Role"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#isPreferredTo -->
+
+    <ObjectProperty rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#isPreferredTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#subOrganisationOf -->
+
+    <ObjectProperty rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#subOrganisationOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Organisation"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Organisation"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#subRoleOrganisation -->
+
+    <ObjectProperty rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#subRoleOrganisation">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Role"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Organisation"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#usesEmployer -->
+
+    <ObjectProperty rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#usesEmployer">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Use"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Organisation"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#usesObject -->
+
+    <ObjectProperty rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#usesObject">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Use"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Object"/>
+    </ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#usesView -->
+
+    <ObjectProperty rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#usesView">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Use"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#View"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#AbstractConcept -->
+
+    <Class rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#AbstractConcept"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#AccessType -->
+
+    <Class rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#AccessType"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Action -->
+
+    <Class rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Action">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#ConcreteConcept"/>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Activity -->
+
+    <Class rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Activity">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#AbstractConcept"/>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#ConcreteConcept -->
+
+    <Class rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#ConcreteConcept"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#ConnectionRule -->
+
+    <Class rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#ConnectionRule"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Consider -->
+
+    <Class rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Consider">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#ConnectionRule"/>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Context -->
+
+    <Class rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Context"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Define -->
+
+    <Class rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Define">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#ConnectionRule"/>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Employ -->
+
+    <Class rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Employ">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#ConnectionRule"/>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Object -->
+
+    <Class rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Object">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#ConcreteConcept"/>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Obligation -->
+
+    <Class rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Obligation">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#AccessType"/>
+        <disjointWith rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Prohibition"/>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Organisation -->
+
+    <Class rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Organisation">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Subject"/>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Permission -->
+
+    <Class rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Permission">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#AccessType"/>
+        <disjointWith rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Prohibition"/>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Prohibition -->
+
+    <Class rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Prohibition">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#AccessType"/>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Recommendation -->
+
+    <Class rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Recommendation">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#AccessType"/>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Role -->
+
+    <Class rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Role">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#AbstractConcept"/>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#SeniorRole -->
+
+    <Class rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#SeniorRole">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Role"/>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#SubRole -->
+
+    <Class rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#SubRole">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Role"/>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Subject -->
+
+    <Class rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Subject">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#ConcreteConcept"/>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Use -->
+
+    <Class rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Use">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#ConnectionRule"/>
+    </Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#View -->
+
+    <Class rdf:about="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#View">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#AbstractConcept"/>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#context1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#context2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#define1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#define2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#role1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#role2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#employ1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#employ2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#R1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#R2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>preferrenceContextToDefine</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Context"/>
+                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#context1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Context"/>
+                                <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#context2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#isPreferredTo"/>
+                                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#context1"/>
+                                        <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#context2"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#definesContext"/>
+                                                <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#define1"/>
+                                                <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#context1"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#definesContext"/>
+                                                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#define2"/>
+                                                        <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#context2"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#isPreferredTo"/>
+                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#define1"/>
+                        <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#define2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>prefrrenceRoleToEmploy</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Role"/>
+                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#role1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#Role"/>
+                                <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#role2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#isPreferredTo"/>
+                                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#role1"/>
+                                        <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#role2"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#employesRole"/>
+                                                <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#employ1"/>
+                                                <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#role1"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#employesRole"/>
+                                                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#employ2"/>
+                                                        <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#role2"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#isPreferredTo"/>
+                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#employ1"/>
+                        <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#employ2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>preferenceFromHierarchy</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#hasParent"/>
+                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#R1"/>
+                        <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#R2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://raw.githubusercontent.com/bleuontologies/orbac.owl/refs/heads/main/orbac.owl#isPreferredTo"/>
+                        <swrl:argument1 rdf:resource="http://www.w3.org/2002/07/owl#R1"/>
+                        <swrl:argument2 rdf:resource="http://www.w3.org/2002/07/owl#R2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
