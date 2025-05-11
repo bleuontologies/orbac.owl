@@ -1,3 +1,17 @@
+# The Organsiation-Based Access Control model ontology for dynamic security policies
+
+A repository dedicated (only) to the **OrBAC** ontology.
+
+## Maintainer
+
+- GitHub: https://github.com/blueontologies
+- Email: blueontologies@proton.me
+
+The ontology is maintained for the purpose of research reproducibility and semantic web application.
+
+
+## LICENSE
+
 Shield: [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
 
 This work is licensed under a
